@@ -7,7 +7,7 @@ Description of methodology used for this machine learning engineer project
 
 -> cleaning and encoding of datas -> ML models entertainment and fine tuning of hyperparameters
 
-## 2.MODELS DIRECTORY 
+## 2.MACHINE LEARNING DIRECTORY 
 
 -> Recording of most relevant models created inside notebooks
 
