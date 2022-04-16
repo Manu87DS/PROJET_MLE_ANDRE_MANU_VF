@@ -1,0 +1,72 @@
+
+============================
+    Get predict class
+============================
+
+request done at /random_forest/score
+| username=alice
+| password=wonderland
+| params = {'dataset_has_more_than_one_individual': False}
+
+predict_class = ['No']
+
+
+============================
+    Get predict class
+============================
+
+request done at /gradient_boosting/score
+| username=alice
+| password=wonderland
+| params = {'dataset_has_more_than_one_individual': False}
+
+predict_class = ['No']
+
+
+============================
+    Get predict class
+============================
+
+request done at /logistic_regression/score
+| username=alice
+| password=wonderland
+| params = {'dataset_has_more_than_one_individual': False}
+
+predict_class = ['No']
+
+
+============================
+    Get predict class
+============================
+
+request done at /random_forest/score
+| username=alice
+| password=wonderland
+| params = {'dataset_has_more_than_one_individual': True}
+
+predict_class = ['No', 'No']
+
+
+============================
+    Get predict class
+============================
+
+request done at /gradient_boosting/score
+| username=alice
+| password=wonderland
+| params = {'dataset_has_more_than_one_individual': True}
+
+predict_class = ['Yes', 'No']
+
+
+============================
+    Get predict class
+============================
+
+request done at /logistic_regression/score
+| username=alice
+| password=wonderland
+| params = {'dataset_has_more_than_one_individual': True}
+
+predict_class = ['No', 'No']
+

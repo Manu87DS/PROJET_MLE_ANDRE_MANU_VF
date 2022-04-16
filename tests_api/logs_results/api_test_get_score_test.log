@@ -1,0 +1,33 @@
+
+============================
+    Get Score test
+============================
+
+request done at /random_forest/score
+| username=alice
+| password=wonderland
+
+score = 0.7353760445682451
+
+
+============================
+    Get Score test
+============================
+
+request done at /gradient_boosting/score
+| username=alice
+| password=wonderland
+
+score = 0.7181058495821727
+
+
+============================
+    Get Score test
+============================
+
+request done at /logistic_regression/score
+| username=alice
+| password=wonderland
+
+score = 0.7348189415041783
+
