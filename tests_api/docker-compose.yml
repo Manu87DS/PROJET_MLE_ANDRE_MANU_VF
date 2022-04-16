@@ -1,0 +1,44 @@
+version: "3.9"
+services:
+  fastapi:
+    image: andre1994/fastapi_churn
+    container_name: my_api
+    networks:
+      - my_network_from_compose
+    ports:
+      - "8000:8000"
+  authorization_api:
+    image: andre1994/authorization_test_projet
+    container_name: my_authorization_test
+    depends_on:
+      - fastapi
+    networks:
+      - my_network_from_compose
+    environment:
+      LOG: 1
+    volumes:
+      - /home/ubuntu/logs:/app/logs
+  get_score_test:
+    image: andre1994/get_score_test_projet
+    container_name: my_get_score_test
+    depends_on:
+      - fastapi
+    networks:
+      - my_network_from_compose
+    environment:
+      LOG: 1
+    volumes:
+      - /home/ubuntu/logs:/app/logs
+  get_predict_test:
+    image: andre1994/get_predict_test_projet
+    container_name: my_get_predict_test
+    depends_on:
+      - fastapi
+    networks:
+      - my_network_from_compose
+    environment:
+      LOG: 1
+    volumes:
+      - /home/ubuntu/logs:/app/logs
+networks:
+  my_network_from_compose:
